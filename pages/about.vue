@@ -1,7 +1,13 @@
 <template>
   <div class="container">
     <div>
-      <logo />
+      <div>
+        <a
+        href="/">
+          <logo/>
+        </a>
+
+      </div>
       <h1 class="title">
         About
       </h1>
