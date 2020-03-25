@@ -1,6 +1,29 @@
 <template>
   <div>
     <nuxt />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDMuyj-h_SCO0Ck--DJTCOXX8nnaUsKd8o",
+        authDomain: "nn-practice.firebaseapp.com",
+        databaseURL: "https://nn-practice.firebaseio.com",
+        projectId: "nn-practice",
+        storageBucket: "nn-practice.appspot.com",
+        messagingSenderId: "786666947862",
+        appId: "1:786666947862:web:a045e7213e26568bf83c37",
+        measurementId: "G-B70LD99FSM"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </div>
 </template>
 
